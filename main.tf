@@ -11,8 +11,8 @@ variable "region" {
 }
 
 provider "alicloud" {
-  access_key = ${access_key}
-  secret_key = ${secret_key}
+  access_key = ${var.access_key}
+  secret_key = ${var.secret_key}
   version    = "~> 1.76"
   region     = ${region}
 }
@@ -37,5 +37,5 @@ output "first_image_id" {
 }
 
 output "region" {
-  value = ${region}
+  value = ${var.region}
 }
