@@ -42,7 +42,7 @@ output "region" {
 
 resource "alicloud_instance" "wy" {
   password              = "Abcd!234"
-  image_id              = "${data.alicloud_images.images_ds.images.2.id}"
+  image_id              = "${data.alicloud_images.images_ds.images.0.id}"
   internet_charge_type  = "PayByTraffic"
   resource_group_id     = "rg-aek2z7njhung2ka"
   instance_type        = "${data.alicloud_instance_types.c2g4.instance_types.0.id}"
