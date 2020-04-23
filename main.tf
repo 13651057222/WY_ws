@@ -53,7 +53,7 @@ resource "alicloud_instance" "wy" {
 }
 
 resource "alicloud_security_group" "default" {
-  name        = "tf_sg"
+  name        = "default"
   description = "default"
   vpc_id      = "vpc-2zeme4cm4udat3oniyxrz"
 }
