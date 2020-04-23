@@ -56,5 +56,5 @@ resource "alicloud_instance" "wy" {
 resource "alicloud_security_group" "default" {
   name        = "default"
   description = "default"
-  vpc_id      = "vpc-abc12345"
+  vpc_id      = "vpc-bp110ctzj23qp97c4c8wq"
 }
