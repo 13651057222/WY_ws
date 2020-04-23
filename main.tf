@@ -41,6 +41,7 @@ output "region" {
 }
 
 resource "alicloud_instance" "wy" {
+  availability_zone     = "cn-beijing-a"
   password              = "Abcd!234"
   image_id              = "${data.alicloud_images.images_ds.images.0.id}"
   internet_charge_type  = "PayByTraffic"
