@@ -41,7 +41,6 @@ output "region" {
 }
 
 resource "alicloud_instance" "wy" {
-  host_name             = "tf_host"
   password              = "Abcd!234"
   image_id              = "${data.alicloud_images.images_ds.images.2.id}"
   internet_charge_type  = "PayByTraffic"
@@ -54,7 +53,7 @@ resource "alicloud_instance" "wy" {
 }
 
 resource "alicloud_security_group" "default" {
-  name        = "default"
+  name        = "tf_sg"
   description = "default"
   vpc_id      = "vpc-2zeme4cm4udat3oniyxrz"
 }
